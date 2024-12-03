@@ -1,0 +1,10 @@
+train: C:/Users/33554/Documents/learn/homew/qr/data/qr/train/images/  # train
+val: C:/Users/33554/Documents/learn/homew/qr/data/qr/val/images/  # val
+test: C:/Users/33554/Documents/learn/homew/qr/data/qr/test/images/  # test
+
+# number of classes
+nc: 1
+ 
+# class names
+names: ['QRcode']
+
