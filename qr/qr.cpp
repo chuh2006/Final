@@ -26,6 +26,7 @@ cv::Mat rec(cv::Mat frame){
             cv::approxPolyDP(contours[i], conPoly[i], 0.02 * peri, true);
             boundRect[i] = cv::boundingRect(conPoly[i]);
             cv::rectangle(frame, boundRect[i].tl(), boundRect[i].br(), cv::Scalar(0, 255, 0), 2);
+            cv::putText(frame, data, cv::Point(10, 50), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2);
         }
     }
     return frame;
